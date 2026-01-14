@@ -23,7 +23,7 @@ export default function Service() {
             href="/#servicios"
             className="bg-primary-dark text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-dark/90 transition-colors"
           >
-            Ver todos los servicios
+            Ver todos los servicios 
           </a>
         </div>
       </div>
