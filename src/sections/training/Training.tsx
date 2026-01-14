@@ -1,8 +1,10 @@
 import { FaArrowRight } from "react-icons/fa";
 import TrainingCarousel from "../../components/training-carousel/TrainingCarousel";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function Training() {
+  const navigate = useNavigate();
   return (
     <div id="capacitaciones">
       <TrainingCarousel />
@@ -14,9 +16,7 @@ export default function Training() {
         viewport={{ once: true }}
       >
         <motion.button
-          onClick={() => {
-            window.location.href = "/capacitaciones-talleres";
-          }}
+          onClick={() => navigate("/capacitaciones-talleres")}
           className="inline-flex items-center justify-center text-sm sm:text-base bg-primary-dark hover:bg-white text-white hover:text-black border-2 hover:border-black font-semibold py-3 px-8 rounded-lg transition-all duration-300 cursor-pointer"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
