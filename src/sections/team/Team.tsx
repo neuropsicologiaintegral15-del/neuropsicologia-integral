@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import vivianaSolis from "../../assets/img/doctor/viviana_solis.jpg";
 import AnimatedCounter from "../../components/animated-counter/AnimatedCounter";
+import { useNavigate } from "react-router-dom";
 
 export default function Team() {
+  const navigate = useNavigate();
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -217,9 +220,7 @@ export default function Team() {
             viewport={{ once: true, margin: "-30px" }}
           >
             <motion.button
-              onClick={() => {
-                window.location.href = "/equipo-completo";
-              }}
+              onClick={() => navigate("/equipo-completo")}
               className="inline-flex items-center justify-center bg-primary-dark hover:bg-white text-white hover:text-black border-2 border-primary-dark hover:border-black font-semibold py-3 px-8 rounded-lg transition-all duration-300 cursor-pointer group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
