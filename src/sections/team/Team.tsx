@@ -47,7 +47,7 @@ export default function Team() {
           className="max-w-5xl mx-auto overflow-hidden"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3, margin: "-50px" }}
+          viewport={{ once: true, amount: 0.3 }}
           variants={containerVariants}
         >
           <motion.div className="text-center my-12" variants={itemVariants}>
@@ -59,7 +59,7 @@ export default function Team() {
               initial={{ width: 0 }}
               whileInView={{ width: 80 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true, margin: "-20px" }}
+              viewport={{ once: true }}
             />
           </motion.div>
 
@@ -144,7 +144,7 @@ export default function Team() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9 }}
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true }}
           >
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
               Experiencia y trayectoria
@@ -217,7 +217,7 @@ export default function Team() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9 }}
-            viewport={{ once: true, margin: "-30px" }}
+            viewport={{ once: true, }}
           >
             <motion.button
               onClick={() => navigate("/equipo-completo")}
