@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import * as Icons from "react-icons/fa";
 import BackButton from "../back-button/BackButton";
@@ -49,7 +49,6 @@ const DynamicIcon: React.FC<DynamicIconProps> = ({ name, ...props }) => {
 };
 
 const ServiceDetail: React.FC<ServiceDetailProps> = ({ service }) => {
-  const navigate = useNavigate();
   const relatedServices = getRelatedServices(service.slug);
 
   // Funciones de contacto
@@ -57,16 +56,16 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ service }) => {
     window.open("https://wa.me/573163413345", "_blank");
   };
 
-  const handleContact = () => {
-    navigate("/contacto");
-  };
-
   return (
     <div id={service.id} className="min-h-screen bg-gray-50">
       {/* Header con navegación entre servicios */}
       <div className="bg-primary-dark text-white">
         <div className="container mx-auto px-4">
-          <BackButton title="Volver" section="servicios" className="pt-8 text-lg" />
+          <BackButton
+            title="Volver"
+            section="servicios"
+            className="pt-8 text-lg"
+          />
 
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between py-4">
             <div className="flex-1">
@@ -230,14 +229,8 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ service }) => {
                 {/* Botones de acción */}
                 <div className="mt-8 pt-6 border-t border-gray-200 space-y-4">
                   <button
-                    onClick={handleContact}
-                    className="block w-full bg-primary-dark text-white text-center py-3 px-4 rounded-lg font-medium hover:bg-primary-dark/90 transition-colors duration-300"
-                  >
-                    Solicitar cita
-                  </button>
-                  <button
                     onClick={handleWhatsApp}
-                    className="block w-full bg-green-600 text-white text-center py-3 px-4 rounded-lg font-medium hover:bg-green-700 transition-colors duration-300 flex items-center justify-center"
+                    className="block w-full bg-green-600 text-white text-center py-3 px-4 rounded-lg font-medium hover:bg-green-700 transition-colors duration-300 flex items-center justify-center cursor-pointer"
                   >
                     <DynamicIcon name="FaWhatsapp" className="mr-2" size={20} />
                     Consultar por WhatsApp

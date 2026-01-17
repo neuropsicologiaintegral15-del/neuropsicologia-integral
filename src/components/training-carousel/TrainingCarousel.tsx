@@ -13,8 +13,12 @@ import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import seminarioInclusionEscolar from "../../assets/img/trainings/seminario_inclusion_escolar_inteligencias_multiples.jpg";
-import capacitacionInteligenciaEmocional from "../../assets/img/trainings/capacitacion_inteligencia_emocional_entorno_laboral.jpg";
-import conferenciaVirtualCrianzaAprendizaje from "../../assets/img/trainings/conferencia_virtual_crianza_aprendizaje.jpg";
+import capacitacionUno from "../../assets/img/trainings/capacitaciones-uno.jpeg";
+import capacitacionDos from "../../assets/img/trainings/capacitaciones-dos.jpeg";
+import capacitacionTres from "../../assets/img/trainings/capacitaciones-tres.jpeg";
+import capacitacionCuatro from "../../assets/img/trainings/capacitaciones-cuatro.jpeg";
+import capacitacionCinco from "../../assets/img/trainings/capacitaciones-cinco.jpeg";
+import capacitacionSeis from "../../assets/img/trainings/capacitacion_seis.jpeg";
 import tallerTrastornosNeurodesarrollo from "../../assets/img/trainings/taller_trastornos_neurodesarrollo_bogota.jpg";
 import tallerTrastornoEspectroAutista from "../../assets/img/trainings/taller_trastorno_espectro_autista.jpg";
 
@@ -22,8 +26,6 @@ export default function TrainingCarousel() {
   const swiperRef = useRef<SwiperType | null>(null);
   const [selectedImage, setSelectedImage] = useState<{
     src: string;
-    title: string;
-    description: string;
   } | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -31,43 +33,44 @@ export default function TrainingCarousel() {
   const trainings = [
     {
       id: 1,
-      title: "SEMINARIO INCLUSIÓN ESCOLAR E INTELIGENCIAS MÚLTIPLES",
-      description: "Gimnasio Campestre Pierre Faure- Cali, septiembre 2020.",
-      image: seminarioInclusionEscolar,
+      image: capacitacionUno,
     },
     {
       id: 2,
-      title: "CAPACITACIÓN INTELIGENCIAS EMOCIONAL EN EL ENTORONO LABORAL",
-      description: "Centro de Rehabilitación del Sur- Cali, septiembre 2020.",
-      image: capacitacionInteligenciaEmocional,
+      image: capacitacionDos,
     },
     {
       id: 3,
-      title: "CONFERENCIA VIRTUAL CRIANZA Y APRENDIZAJE",
-      description:
-        "Educando desde el amor y el respeto CIAT-CRECIAT - Septiembre 2020",
-      image: conferenciaVirtualCrianzaAprendizaje,
+      image: capacitacionTres,
     },
     {
       id: 4,
-      title: "TALLER TRASTORNOS DEL NEURODESARROLLO",
-      description: "Bogotá Febrero 2020",
-      image: tallerTrastornosNeurodesarrollo,
+      image: capacitacionCuatro,
     },
     {
       id: 5,
-      title: "TALLER TRASTORNO DEL ESPECTRO AUTISTA",
-      description: "Neiva Marzo 2020",
+      image: capacitacionCinco,
+    },
+    {
+      id: 5,
+      image: tallerTrastornosNeurodesarrollo,
+    },
+    {
+      id: 7,
       image: tallerTrastornoEspectroAutista,
+    },
+    {
+      id: 8,
+      image: seminarioInclusionEscolar,
+    },
+    {
+      id: 9,
+      image: capacitacionSeis,
     },
   ];
 
   // Abrir modal con la imagen seleccionada
-  const openModal = (training: {
-    src: string;
-    title: string;
-    description: string;
-  }) => {
+  const openModal = (training: { src: string }) => {
     setSelectedImage(training);
     setIsModalOpen(true);
     // Deshabilitar scroll del body cuando el modal está abierto
@@ -120,8 +123,9 @@ export default function TrainingCarousel() {
             }}
             viewport={{ once: true }}
           >
-            Programas especializados en neuropsicología para profesionales de la
-            salud
+            Jornadas de capacitación y formación a docentes, padres de familia y
+            profesionales del área en temas de neurodesarrollo, neuroeducación,
+            neuropsicologia e inclusión escolar
           </motion.p>
         </div>
 
@@ -172,8 +176,6 @@ export default function TrainingCarousel() {
                   onClick={() =>
                     openModal({
                       src: training.image,
-                      title: training.title,
-                      description: training.description,
                     })
                   }
                 >
@@ -182,7 +184,7 @@ export default function TrainingCarousel() {
                     <div className="relative h-56 md:h-64">
                       <img
                         src={training.image}
-                        alt={training.title}
+                        alt="Imagen_capacitacion"
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 transition-opacity duration-500"></div>
@@ -197,19 +199,6 @@ export default function TrainingCarousel() {
                         <FaExpand className="text-gray-700" size={16} />
                       </motion.div>
                     </div>
-
-                    {/* Título debajo de la imagen */}
-                    <motion.div
-                      className="bg-white p-4"
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{ duration: 0.8, delay: 0.3 }}
-                      viewport={{ once: true }}
-                    >
-                      <h3 className="text-sm sm:text-lg font-semibold text-gray-800 text-center">
-                        {training.title}
-                      </h3>
-                    </motion.div>
                   </div>
                 </div>
               </SwiperSlide>
@@ -310,22 +299,9 @@ export default function TrainingCarousel() {
               >
                 <img
                   src={selectedImage.src}
-                  alt={selectedImage.title}
+                  alt="Imagen_capacitación"
                   className="w-full h-full object-cover"
                 />
-              </motion.div>
-
-              {/* Información de la imagen */}
-              <motion.div
-                className="p-6 bg-white border-t border-gray-100"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.5 }}
-              >
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">
-                  {selectedImage.title}
-                </h3>
-                <p className="text-gray-600">{selectedImage.description}</p>
               </motion.div>
             </motion.div>
 

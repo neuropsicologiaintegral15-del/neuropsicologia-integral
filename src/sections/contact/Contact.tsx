@@ -204,7 +204,6 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block rounded-xl"
-                  whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   style={{ willChange: "transform" }}
                 >

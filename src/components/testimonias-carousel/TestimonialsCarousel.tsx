@@ -74,22 +74,26 @@ export default function TestimonialsCarousel() {
 
   return (
     <section className="py-16">
-      <div className="container mx-auto px-4">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 2.5,
+          ease: [0.22, 1, 0.36, 1],
+        }}
+        viewport={{ once: true, margin: "-100px" }}
+        className="container mx-auto px-4"
+      >
         {/* Encabezado de la sección */}
-        <motion.div
-          className="text-center mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Testimonios de Nuestros Pacientes
+            Testimonios de nuestros pacientes
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
             Descubre las experiencias de quienes han confiado en nuestros
             servicios de evaluación y rehabilitación neuropsicológica.
           </p>
-        </motion.div>
+        </div>
 
         {/* Carousel de testimonios */}
         <div className="relative px-2 md:px-12">
@@ -154,7 +158,7 @@ export default function TestimonialsCarousel() {
             <FaChevronRight size={20} />
           </button>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

@@ -66,7 +66,7 @@ export default function ServiceNavigation({
         <button
           ref={buttonRef}
           onClick={() => setShowAllServices(!showAllServices)}
-          className="flex items-center text-primary-dark text-base transition-colors px-4 py-2 rounded-lg bg-white hover:bg-white/80"
+          className="flex items-center text-primary-dark text-base transition-colors px-4 py-2 rounded-lg bg-white hover:bg-white/80 cursor-pointer border border-gray-200 hover:shadow-md cursor-pointer"
           aria-expanded={showAllServices}
           aria-haspopup="true"
         >

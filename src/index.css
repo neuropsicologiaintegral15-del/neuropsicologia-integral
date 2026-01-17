@@ -1,23 +1,24 @@
 @import "tailwindcss";
 
+/* Definición de color global  */
 @theme {
   --color-primary-blue: #06c4f4;
   --color-primary-dark: #044c98;
 }
 
+/* Fondo con degradado */
 .gradient-bg {
   background: linear-gradient(135deg, var(--color-primary-blue) 0%, var(--color-primary-dark) 100%);
 }
 
-.service-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
+/* Suavizar el desplazamiento al hacer clic en enlaces internos */
 html{
   scroll-behavior: smooth
 }
+
+/* Ocultar la barra de desplazamiento */
+::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+

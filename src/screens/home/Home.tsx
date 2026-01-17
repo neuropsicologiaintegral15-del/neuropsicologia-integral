@@ -8,6 +8,7 @@ import Team from "../../sections/team/Team";
 import Training from "../../sections/training/Training";
 import Banner from "../banner/Banner";
 import { useEffect } from "react";
+import TestimonialsCarousel from "../../components/testimonias-carousel/TestimonialsCarousel";
 
 export default function Home() {
   const location = useLocation();
@@ -54,6 +55,7 @@ export default function Home() {
       <About />
       <Services />
       <Team />
+      <TestimonialsCarousel />
       <Training />
       <Contact />
       <Footer />
