@@ -186,7 +186,7 @@ export default function Team() {
                   <AnimatedCounter
                     value={20}
                     duration={2000}
-                    suffix="+"
+                    prefix="+"
                     className="text-primary-200"
                   />
                 </div>
