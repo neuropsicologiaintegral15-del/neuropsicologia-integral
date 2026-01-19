@@ -319,7 +319,8 @@ export default function Professionals() {
                     <AnimatedCounter 
                       value={stat.value} 
                       duration={1500 + index * 500} 
-                      prefix={index === 3 ? "%" : index === 2 ? "+" : ""}
+                      prefix={index === 2 ? "+" : ""}
+                      suffix={index === 3 ? "%" : ""}
                     />
                   </div>
                   <div className="text-gray-700">{stat.text}</div>

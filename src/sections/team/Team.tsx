@@ -151,7 +151,7 @@ export default function Team() {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {/* Años de experiencia */}
-              <div className="text-center p-4 border border-gray-100 rounded-lg hover:shadow-md transition-shadow duration-300">
+              <div className="text-center p-4 border border-gray-100 rounded-lg transition-shadow duration-300">
                 <div className="text-primary-200 text-3xl md:text-4xl font-bold mb-2 h-12 flex items-center justify-center">
                   <AnimatedCounter
                     value={20}
@@ -166,12 +166,12 @@ export default function Team() {
               </div>
 
               {/* Niños atendidos */}
-              <div className="text-center p-4 border border-gray-100 rounded-lg hover:shadow-md transition-shadow duration-300">
+              <div className="text-center p-4 border border-gray-100 rounded-lg transition-shadow duration-300">
                 <div className="text-primary-200 text-3xl md:text-4xl font-bold mb-2 h-12 flex items-center justify-center">
                   <AnimatedCounter
                     value={500}
                     duration={3000}
-                    suffix="+"
+                    prefix="+"
                     className="text-primary-200"
                   />
                 </div>
@@ -181,7 +181,7 @@ export default function Team() {
               </div>
 
               {/* Ciudades como conferencista */}
-              <div className="text-center p-4 border border-gray-100 rounded-lg hover:shadow-md transition-shadow duration-300">
+              <div className="text-center p-4 border border-gray-100 rounded-lg transition-shadow duration-300">
                 <div className="text-primary-200 text-3xl md:text-4xl font-bold mb-2 h-12 flex items-center justify-center">
                   <AnimatedCounter
                     value={20}
@@ -196,7 +196,7 @@ export default function Team() {
               </div>
 
               {/* Participaciones internacionales */}
-              <div className="text-center p-4 border border-gray-100 rounded-lg hover:shadow-md transition-shadow duration-300">
+              <div className="text-center p-4 border border-gray-100 rounded-lg transition-shadow duration-300">
                 <div className="text-primary-200 text-3xl md:text-4xl font-bold mb-2 h-12 flex items-center justify-center">
                   <AnimatedCounter
                     value={3}
