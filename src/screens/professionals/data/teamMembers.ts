@@ -32,18 +32,20 @@ export const teamMembers: ProfessionalMember[] = [
     shortDescription:
       "Psicóloga clínica educativa con Magíster en Neuropsicología y educación, Especialista en Neuropsicología Infantil, Inteligencias múltiples y educación inclusiva.",
     fullDescription: `
-      Neuropsicología Integral es dirigido por Viviana Solís Arcila, psicóloga clínica educativa, Magíster en Neuropsicología y educación, Especialista en Neuropsicología Infantil, Especialista en inteligencias múltiples, Diplomatura en Neuro-rehabilitación en los trastornos del aprendizaje. Diplomatura en Educación inclusiva. Curso internacional en diagnóstico e intervención en Autismo. Docente universitaria. Ponente nacional.
-      
-      Alta capacidad para evaluar, diagnosticar e intervenir problemas asociados al neuro-desarrollo, del aprendizaje y psicosociales. Experiencia en el sector educativo, clínico y social; con énfasis en intervención en procesos de desarrollo de la primera infancia, problemáticas en población de alta vulnerabilidad, intervención individual y grupal.
-      
-      Graduada en el 2006 como Psicóloga clínica de la Universidad de San Buenaventura Cali-Colombia, recibió mención de honor, excelencia académica y beca a la excelencia por su desempeño académico. En el 2012 finaliza con mención de honor la Especialización en Neuropsicología Infantil en la Universidad Javeriana de Cali.
-      
-      En el 2016 culmina la Maestría en Neuropsicología y Educación con la Universidad Internacional de la Rioja. Actualmente labora en dos clínicas pediátricas de la ciudad de Cali-Colombia como Neuropsicóloga Infantil, asesora como freelance a instituciones educativas en el proceso de inclusión escolar.
-    `,
+    Neuropsicología Integral es dirigido por Viviana Solís Arcila, psicóloga clínica educativa, Magíster en Neuropsicología y educación, Especialista en Neuropsicología Infantil, Especialista en inteligencias múltiples, Diplomatura en Neuro-rehabilitación en los trastornos del aprendizaje. Diplomatura en Educación inclusiva. Curso internacional en diagnóstico e intervención en Autismo. Docente universitaria. Ponente nacional e internacional.
+    
+    Alta capacidad para evaluar, diagnosticar e intervenir problemas asociados al neuro-desarrollo, del aprendizaje y psicosociales. Experiencia en el sector educativo, clínico y social; con énfasis en intervención en procesos de desarrollo de la primera infancia, problemáticas en población de alta vulnerabilidad, intervención individual y grupal.
+    
+    Graduada en el 2006 como Psicóloga clínica de la Universidad de San Buenaventura Cali-Colombia, recibió mención de honor, excelencia académica y beca a la excelencia por su desempeño académico. En el 2012 finaliza con mención de honor la Especialización en Neuropsicología Infantil en la Universidad Javeriana de Cali, donde su trabajo de grado fue publicado en la Revista Chilena de Neuropsicología por su impacto en rehabilitación en niños con TDAH.
+    
+    En el 2016 culmina la Maestría en Neuropsicología y Educación con la Universidad Internacional de la Rioja y de manera paralela se especializa en Inteligencias Múltiples. 
+    
+    Actualmente labora en dos clínicas reconocidas de la ciudad de Cali-Colombia como Neuropsicóloga Infantil, y asesora como freelance a instituciones educativas en el proceso de inclusión escolar.
+  `,
     education: [
       "Magíster en Neuropsicología y Educación - Universidad Internacional de la Rioja",
-      "Especialización en Neuropsicología Infantil - Universidad Javeriana Cali",
-      "Especialización en Inteligencias Múltiples",
+      "Especialización en Neuropsicología Infantil - Universidad Javeriana Cali (Mención de honor, trabajo publicado en Revista Chilena de Neuropsicología)",
+      "Especialización en Inteligencias Múltiples (Cursada paralelamente a la Maestría)",
       "Psicóloga Clínica - Universidad de San Buenaventura Cali",
       "Diplomatura en Neuro-rehabilitación en trastornos del aprendizaje",
       "Diplomatura en Educación Inclusiva",
@@ -52,7 +54,7 @@ export const teamMembers: ProfessionalMember[] = [
     experience: [
       "Más de 15 años de experiencia en psicología clínica educativa",
       "Directora y Fundadora del Centro de Neuropsicología Integral",
-      "Neuropsicóloga Infantil en clínicas pediátricas de Cali",
+      "Neuropsicóloga Infantil en dos clínicas reconocidas de Cali",
       "Docente universitaria en Especialización de Neuropsicología Infantil",
       "Asesora de instituciones educativas en inclusión escolar",
       "Conferencista nacional e internacional en neuroeducación",
@@ -154,16 +156,17 @@ export const teamMembers: ProfessionalMember[] = [
     specialty: "Neurodesarrollo y Psicomotricidad",
     image: stephania,
     shortDescription:
-      "Terapeuta ocupacional con formación en Neurodesarrollo, Psicomotricidad y Terapia ABA para niños con TEA.",
+      "Terapeuta ocupacional con formación en Neurodesarrollo, Psicomotricidad y Terapia ABA para niños con TEA trastornos de conducta.",
     fullDescription: `
-      Terapeuta ocupacional con formación en Neurodesarrollo y Psicomotricidad, y Culminación de Curso en Terapia ABA.
+      Terapeuta ocupacional con formación en Neurodesarrollo y Psicomotricidad, con formación en terapia ABA e integración sensorial.
       
-      Experiencia en estimulación temprana, estrategias de intervención y movilización de tejidos blandos en adultos, estrategias de regulación de conductas en niños con TEA y técnicas de intervención de habilidades escolares desde el contexto familiar y educativo.
+      Experiencia en estimulación temprana, estrategias de intervención, ertificación en integración sensorial y movilización de tejidos blandos en adultos, estrategias de regulación de conductas en niños con TEA y técnicas de intervención de habilidades escolares desde el contexto familiar y educativo.
     `,
     education: [
       "Terapeuta Ocupacional",
       "Formación en Neurodesarrollo y Psicomotricidad",
-      "Curso en Terapia ABA",
+      "Formación en Terapia ABA",
+      "Formación en Integración Sensorial",
       "Especialización en estimulación temprana",
     ],
     experience: [

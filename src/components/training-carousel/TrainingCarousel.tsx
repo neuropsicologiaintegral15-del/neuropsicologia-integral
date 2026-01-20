@@ -86,7 +86,7 @@ export default function TrainingCarousel() {
   };
 
   return (
-    <section className="pt-12 bg-white">
+    <section className="bg-white">
       <motion.div
         className="container mx-auto px-4"
         initial={{ opacity: 0, y: 20 }}
@@ -100,7 +100,7 @@ export default function TrainingCarousel() {
         {/* Encabezado simple */}
         <div className="text-center mb-12">
           <motion.h2
-            className="text-3xl md:text-4xl font-bold text-gray-800 mt-16"
+            className="text-3xl font-bold text-gray-800 mt-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

@@ -41,7 +41,7 @@ export default function Team() {
   };
 
   return (
-    <section id="equipo" className="py-16 bg-gray-50 overflow-hidden">
+    <section id="equipo" className="py-4 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4 overflow-hidden">
         <motion.div
           className="max-w-5xl mx-auto overflow-hidden"
@@ -51,7 +51,7 @@ export default function Team() {
           variants={containerVariants}
         >
           <motion.div className="text-center my-12" variants={itemVariants}>
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl font-bold text-gray-800">
               ¿Quién está detrás del Centro?
             </h2>
             <motion.div
@@ -229,7 +229,7 @@ export default function Team() {
               <FaArrowRight className="ml-3 group-hover:translate-x-1 transition-transform duration-300" />
             </motion.button>
 
-            <p className="text-gray-600 mt-4 text-sm">
+            <p className="text-gray-600 my-8 text-sm">
               Descubre todos nuestros especialistas y sus áreas de experiencia
             </p>
           </motion.div>

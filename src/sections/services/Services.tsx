@@ -103,7 +103,7 @@ export default function Services() {
   };
 
   return (
-    <section id="servicios" className="py-16 bg-white">
+    <section id="servicios" className="py-4 bg-white">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center my-12"
@@ -134,7 +134,7 @@ export default function Services() {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

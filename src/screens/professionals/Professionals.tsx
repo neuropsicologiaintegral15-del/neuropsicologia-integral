@@ -10,13 +10,13 @@ import AnimatedCounter from "../../components/animated-counter/AnimatedCounter";
 // Variantes para animaciones
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     transition: {
       duration: 0.6,
-    }
-  }
+    },
+  },
 };
 
 const staggerContainer = {
@@ -25,24 +25,25 @@ const staggerContainer = {
     opacity: 1,
     transition: {
       staggerChildren: 0.15,
-      delayChildren: 0.2
-    }
-  }
+      delayChildren: 0.2,
+    },
+  },
 };
 
 const fadeInScale = {
   hidden: { opacity: 0, scale: 0.9 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     scale: 1,
     transition: {
       duration: 0.5,
-    }
-  }
+    },
+  },
 };
 
 export default function Professionals() {
-  const [selectedMember, setSelectedMember] = useState<ProfessionalMember | null>(null);
+  const [selectedMember, setSelectedMember] =
+    useState<ProfessionalMember | null>(null);
   const featuredRef = useRef(null);
   const teamRef = useRef(null);
   const statsRef = useRef(null);
@@ -110,10 +111,7 @@ export default function Professionals() {
               variants={fadeInUp}
               className="mb-16"
             >
-              <motion.div
-                variants={fadeInUp}
-                className="text-center mb-8"
-              >
+              <motion.div variants={fadeInUp} className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-gray-800 mb-2 flex items-center justify-center">
                   Directora y Fundadora
                 </h3>
@@ -131,7 +129,11 @@ export default function Professionals() {
                   <div className="flex flex-col items-center mb-8">
                     <motion.div
                       initial={{ opacity: 0, scale: 0.8 }}
-                      animate={isFeaturedInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+                      animate={
+                        isFeaturedInView
+                          ? { opacity: 1, scale: 1 }
+                          : { opacity: 0, scale: 0.8 }
+                      }
                       transition={{ duration: 0.5, delay: 0.2 }}
                       className="relative"
                     >
@@ -149,16 +151,28 @@ export default function Professionals() {
                       variants={staggerContainer}
                       className="mt-8 text-center max-w-2xl"
                     >
-                      <motion.h3 variants={fadeInUp} className="text-2xl font-bold text-gray-800 mb-2">
+                      <motion.h3
+                        variants={fadeInUp}
+                        className="text-2xl font-bold text-gray-800 mb-2"
+                      >
                         {featuredMember.name}
                       </motion.h3>
-                      <motion.p variants={fadeInUp} className="text-primary-200 font-bold text-xl mb-2">
+                      <motion.p
+                        variants={fadeInUp}
+                        className="text-primary-200 font-bold text-xl mb-2"
+                      >
                         {featuredMember.title}
                       </motion.p>
-                      <motion.p variants={fadeInUp} className="text-gray-700 mb-4">
+                      <motion.p
+                        variants={fadeInUp}
+                        className="text-gray-700 mb-4"
+                      >
                         {featuredMember.specialty}
                       </motion.p>
-                      <motion.p variants={fadeInUp} className="text-gray-600 text-lg mb-6">
+                      <motion.p
+                        variants={fadeInUp}
+                        className="text-gray-600 text-lg mb-6"
+                      >
                         {featuredMember.shortDescription}
                       </motion.p>
                     </motion.div>
@@ -167,7 +181,11 @@ export default function Professionals() {
                   {/* BOTONES CENTRADOS */}
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
-                    animate={isFeaturedInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                    animate={
+                      isFeaturedInView
+                        ? { opacity: 1, y: 0 }
+                        : { opacity: 0, y: 20 }
+                    }
                     transition={{ duration: 0.5, delay: 0.6 }}
                     className="flex flex-wrap justify-center gap-4 mb-8"
                   >
@@ -210,9 +228,9 @@ export default function Professionals() {
                 key={member.id}
                 variants={fadeInUp}
                 custom={index}
-                whileHover={{ 
+                whileHover={{
                   y: -8,
-                  transition: { duration: 0.3 }
+                  transition: { duration: 0.3 },
                 }}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 h-full"
               >
@@ -221,7 +239,11 @@ export default function Professionals() {
                     {/* Imagen con animación */}
                     <motion.div
                       initial={{ opacity: 0, scale: 0.8 }}
-                      animate={isTeamInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+                      animate={
+                        isTeamInView
+                          ? { opacity: 1, scale: 1 }
+                          : { opacity: 0, scale: 0.8 }
+                      }
                       transition={{ duration: 0.4, delay: index * 0.1 }}
                       className="mb-4"
                     >
@@ -234,25 +256,37 @@ export default function Professionals() {
 
                     {/* Información básica */}
                     <div className="flex-grow">
-                      <motion.h3 
+                      <motion.h3
                         initial={{ opacity: 0, y: 10 }}
-                        animate={isTeamInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+                        animate={
+                          isTeamInView
+                            ? { opacity: 1, y: 0 }
+                            : { opacity: 0, y: 10 }
+                        }
                         transition={{ duration: 0.4, delay: index * 0.1 + 0.2 }}
                         className="text-xl font-bold text-gray-800 mb-2"
                       >
                         {member.name}
                       </motion.h3>
-                      <motion.p 
+                      <motion.p
                         initial={{ opacity: 0, y: 10 }}
-                        animate={isTeamInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+                        animate={
+                          isTeamInView
+                            ? { opacity: 1, y: 0 }
+                            : { opacity: 0, y: 10 }
+                        }
                         transition={{ duration: 0.4, delay: index * 0.1 + 0.3 }}
                         className="text-primary-200 font-medium mb-2"
                       >
                         {member.title}
                       </motion.p>
-                      <motion.p 
+                      <motion.p
                         initial={{ opacity: 0, y: 10 }}
-                        animate={isTeamInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+                        animate={
+                          isTeamInView
+                            ? { opacity: 1, y: 0 }
+                            : { opacity: 0, y: 10 }
+                        }
                         transition={{ duration: 0.4, delay: index * 0.1 + 0.4 }}
                         className="text-gray-700 line-clamp-3 text-sm"
                       >
@@ -293,22 +327,25 @@ export default function Professionals() {
             variants={fadeInUp}
             className="bg-white rounded-xl shadow-lg p-8"
           >
-            <motion.h3 
+            <motion.h3
               variants={fadeInUp}
               className="text-2xl font-bold text-gray-800 mb-6 text-center"
             >
               Nuestro Equipo Multidisciplinario
             </motion.h3>
-            
+
             <motion.div
               variants={staggerContainer}
               className="grid grid-cols-1 md:grid-cols-4 gap-6"
             >
               {[
-                { value: teamMembers.length, text: "Profesionales especializados" },
+                {
+                  value: teamMembers.length,
+                  text: "Profesionales especializados",
+                },
                 { value: 5, text: "Áreas de especialidad" },
                 { value: 80, text: "Años experiencia colectiva" },
-                { value: 100, text: "Trabajo en equipo coordinado" }
+                { value: 100, text: "Trabajo en equipo coordinado" },
               ].map((stat, index) => (
                 <motion.div
                   key={index}
@@ -316,9 +353,9 @@ export default function Professionals() {
                   className="text-center p-4"
                 >
                   <div className="text-primary-200 text-4xl font-bold mb-2">
-                    <AnimatedCounter 
-                      value={stat.value} 
-                      duration={1500 + index * 500} 
+                    <AnimatedCounter
+                      value={stat.value}
+                      duration={1500 + index * 500}
                       prefix={index === 2 ? "+" : ""}
                       suffix={index === 3 ? "%" : ""}
                     />
@@ -327,16 +364,16 @@ export default function Professionals() {
                 </motion.div>
               ))}
             </motion.div>
-            
-            <motion.p 
+
+            <motion.p
               variants={fadeInUp}
               className="text-gray-600 text-center mt-6 max-w-3xl mx-auto"
             >
               Cada profesional aporta su experiencia específica, trabajando de
-              manera coordinada bajo la dirección de Viviana Solís para ofrecerte
-              una atención integral y personalizada. Nuestro equipo
-              multidisciplinario cubre todas las etapas del ciclo vital, desde la
-              primera infancia hasta la adultez.
+              manera coordinada bajo la dirección de la profesional especializada Viviana Solís para
+              ofrecerte una atención integral y personalizada. Nuestro equipo
+              multidisciplinario cubre todas las etapas del ciclo vital, desde
+              la primera infancia hasta la adultez.
             </motion.p>
           </motion.div>
         </div>
@@ -417,10 +454,10 @@ export default function Professionals() {
                     className="lg:w-2/3 space-y-8"
                   >
                     <div>
-                      <h3 className="text-xl font-bold text-gray-800 mb-4">
+                      <h3 className="text-xl font-bold text-gray-800">
                         Perfil Profesional Completo
                       </h3>
-                      <div className="text-gray-700 whitespace-pre-line">
+                      <div className="text-gray-700 whitespace-pre-line text-justify">
                         {selectedMember.fullDescription}
                       </div>
                     </div>
@@ -435,17 +472,16 @@ export default function Professionals() {
                           <FaGraduationCap className="mr-2 text-primary-200" />
                           Formación Académica
                         </h4>
-                        <ul className="space-y-3">
+                        <ul className="space-y-3 pl-8 list-disc">
                           {selectedMember.education.map((item, index) => (
-                            <motion.li 
+                            <motion.li
                               key={index}
                               initial={{ opacity: 0, x: -10 }}
                               animate={{ opacity: 1, x: 0 }}
                               transition={{ delay: 0.4 + index * 0.05 }}
-                              className="flex items-start"
+                              className="text-gray-600 marker:text-primary-200"
                             >
-                              <div className="w-2 h-2 bg-primary-200 rounded-full mt-2 mr-3"></div>
-                              <span className="text-gray-600">{item}</span>
+                              {item}
                             </motion.li>
                           ))}
                         </ul>
@@ -460,17 +496,16 @@ export default function Professionals() {
                           <FaBriefcase className="mr-2 text-primary-200" />
                           Experiencia
                         </h4>
-                        <ul className="space-y-3">
+                        <ul className="space-y-3 pl-8 list-disc">
                           {selectedMember.experience.map((item, index) => (
-                            <motion.li 
+                            <motion.li
                               key={index}
                               initial={{ opacity: 0, x: -10 }}
                               animate={{ opacity: 1, x: 0 }}
                               transition={{ delay: 0.5 + index * 0.05 }}
-                              className="flex items-start"
+                              className="text-gray-600 marker:text-primary-200"
                             >
-                              <div className="w-2 h-2 bg-primary-200 rounded-full mt-2 mr-3"></div>
-                              <span className="text-gray-600">{item}</span>
+                              {item}
                             </motion.li>
                           ))}
                         </ul>
@@ -486,17 +521,16 @@ export default function Professionals() {
                         <FaStar className="mr-2 text-primary-200" />
                         Especialidades
                       </h4>
-                      <ul className="space-y-3">
+                      <ul className="space-y-3 pl-8 list-disc">
                         {selectedMember.specialties.map((specialty, index) => (
-                          <motion.li 
+                          <motion.li
                             key={index}
                             initial={{ opacity: 0, x: -10 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.6 + index * 0.05 }}
-                            className="flex items-start"
+                            className="text-gray-600 marker:text-primary-200"
                           >
-                            <div className="w-2 h-2 bg-primary-200 rounded-full mt-2 mr-3"></div>
-                            <span className="text-gray-600">{specialty}</span>
+                            {specialty}
                           </motion.li>
                         ))}
                       </ul>

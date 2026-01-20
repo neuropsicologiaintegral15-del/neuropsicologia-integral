@@ -57,7 +57,7 @@ export default function About() {
   ];
 
   return (
-    <section id="nosotros" className="py-16 bg-gray-50">
+    <section id="nosotros" className="py-4 bg-gray-50">
       <div className="container mx-auto px-4">
         {/* Encabezado */}
         <div className="text-center my-12">
@@ -87,7 +87,7 @@ export default function About() {
 
         {/* Texto descriptivo */}
         <motion.div
-          className="bg-white flex flex-col rounded-xl shadow-lg p-8 mb-20 text-justify gap-8"
+          className="bg-white flex flex-col rounded-xl shadow-lg p-8 mb-12 text-justify gap-8"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
