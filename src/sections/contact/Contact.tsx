@@ -115,7 +115,7 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block rounded-xl"
-                  whileHover={{ scale: 1.02 }}
+                  whileHover={{ translateY: -3.02 }}
                   whileTap={{ scale: 0.98 }}
                   style={{ willChange: "transform" }}
                 >
@@ -139,7 +139,7 @@ export default function Contact() {
                 <motion.a
                   href="mailto:neuropsicologiaintegral15@gmail.com?subject=Consulta%20Neuropsicología%20Integral&body=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20sus%20servicios."
                   className="block rounded-xl"
-                  whileHover={{ scale: 1.02 }}
+                  whileHover={{ translateY: -3.02 }}
                   whileTap={{ scale: 0.98 }}
                   style={{ willChange: "transform" }}
                 >

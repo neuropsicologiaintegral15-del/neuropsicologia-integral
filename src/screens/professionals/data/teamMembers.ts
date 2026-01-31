@@ -7,6 +7,7 @@ import mariaCamila from "../../../assets/img/professionals/maria_camila.jpeg";
 import santiago from "../../../assets/img/professionals/santiago.jpeg";
 import manuel from "../../../assets/img/professionals/manuel.jpeg";
 import martha from "../../../assets/img/professionals/martha.jpeg";
+import daniela from "../../../assets/img/professionals/daniela.jpeg";
 
 export interface ProfessionalMember {
   id: number;
@@ -386,6 +387,53 @@ export const teamMembers: ProfessionalMember[] = [
       "Adaptación de entornos para la inclusión",
       "Coordinación con equipos interdisciplinarios",
       "Intervención basada en evidencia",
+    ],
+  },
+  {
+    id: 10,
+    name: "Daniela Marín Mejía",
+    title: "Psicóloga",
+    specialty:
+      "Educación Inclusiva y Diseño Universal para el Aprendizaje (DUA)",
+    image: daniela,
+    shortDescription:
+      "Especialista en Neuropsicología Infantil con enfoque en educación inclusiva, implementación de DUA y diseño de Planes Individuales de Ajustes Razonables (PIAR).",
+    fullDescription: `
+    Psicóloga con Especialización en Neuropsicología Infantil, cuenta con 4 años de experiencia en evaluación, diagnóstico e intervención neuropsicológica en contextos clínicos y educativos. Su práctica profesional se centra en el abordaje integral de niños y adolescentes con dificultades del neurodesarrollo, problemas de aprendizaje y necesidades educativas especiales.
+    
+    Posee amplia experiencia en la aplicación e interpretación de pruebas neuropsicológicas estandarizadas, orientación y acompañamiento familiar desde un enfoque sistémico y colaborativo. Se destaca por su conocimiento especializado en la implementación de ajustes razonables bajo el enfoque del Diseño Universal para el Aprendizaje (DUA), promoviendo entornos educativos inclusivos y accesibles para todos los estudiantes.
+    
+    Daniela cuenta con experiencia en la elaboración, implementación y seguimiento de Planes Individuales de Ajustes Razonables (PIAR), así como en el diseño de estrategias pedagógicas, metodológicas y didácticas adaptadas a las necesidades específicas de cada estudiante. Su trabajo se caracteriza por la articulación entre el diagnóstico neuropsicológico y las propuestas de intervención educativa, buscando siempre la máxima participación y aprendizaje del estudiante en su contexto escolar.
+    
+    Ha trabajado en coordinación con instituciones educativas, equipos docentes y familias, fortaleciendo los procesos de inclusión educativa desde un enfoque de derechos y equidad. Su práctica integra los principios de la neuropsicología infantil con las mejores prácticas en educación inclusiva, garantizando intervenciones basadas en evidencia y centradas en el bienestar integral del niño.
+  `,
+    education: [
+      "Especialización en Neuropsicología Infantil",
+      "Psicóloga - Universidad [Nombre de la Universidad, si se conoce]",
+      "Formación en Diseño Universal para el Aprendizaje (DUA)",
+      "Certificación en evaluación neuropsicológica infantil",
+      "Diplomado en Educación Inclusiva y Ajustes Razonables",
+    ],
+    experience: [
+      "4 años de experiencia en evaluación neuropsicológica infantil",
+      "Implementación de Diseño Universal para el Aprendizaje (DUA) en instituciones educativas",
+      "Elaboración y seguimiento de Planes Individuales de Ajustes Razonables (PIAR)",
+      "Diseño de estrategias pedagógicas y didácticas inclusivas",
+      "Acompañamiento y orientación familiar en procesos de neurodesarrollo",
+      "Coordinación con equipos docentes y directivos escolares",
+      "Intervención neuropsicológica en contextos clínicos y educativos",
+    ],
+    specialties: [
+      "Evaluación neuropsicológica infantil integral",
+      "Implementación de Diseño Universal para el Aprendizaje (DUA)",
+      "Elaboración de Planes Individuales de Ajustes Razonables (PIAR)",
+      "Diseño de estrategias pedagógicas inclusivas",
+      "Orientación y acompañamiento familiar",
+      "Neuropsicología educativa e inclusión escolar",
+      "Trastornos del neurodesarrollo y dificultades de aprendizaje",
+      "Articulación clínica-educativa",
+      "Capacitación a docentes en estrategias inclusivas",
+      "Ajustes metodológicos y didácticos personalizados",
     ],
   },
 ];
