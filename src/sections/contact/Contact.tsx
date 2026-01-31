@@ -109,7 +109,7 @@ export default function Contact() {
                   </div>
                 </motion.div>
 
-             
+                {/* BOTÓN de WhatsApp */}
                 <motion.a
                   href="https://api.whatsapp.com/send?phone=573163413345&text=Hola,%20me%20interesa%20información%20sobre%20sus%20servicios%20de%20neuropsicología"
                   target="_blank"
