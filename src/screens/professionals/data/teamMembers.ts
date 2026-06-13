@@ -4,7 +4,6 @@ import liliana from "../../../assets/img/professionals/liliana.jpg";
 import stephania from "../../../assets/img/professionals/stephania.jpg";
 import kelly from "../../../assets/img/professionals/kelly.jpg";
 import mariaCamila from "../../../assets/img/professionals/maria_camila.jpeg";
-import santiago from "../../../assets/img/professionals/santiago.jpeg";
 import manuel from "../../../assets/img/professionals/manuel.jpeg";
 import martha from "../../../assets/img/professionals/martha.jpeg";
 import daniela from "../../../assets/img/professionals/daniela.jpeg";
@@ -267,46 +266,6 @@ export const teamMembers: ProfessionalMember[] = [
   },
   {
     id: 7,
-    name: "Santiago Huertas",
-    title: "Terapeuta Ocupacional",
-    specialty: "Promoción de autonomía e independencia funcional",
-    image: santiago,
-    shortDescription:
-      "Terapeuta Ocupacional con abordaje integral a lo largo del ciclo vital, orientado a la promoción de la autonomía y la independencia funcional.",
-    fullDescription: `
-      Terapeuta Ocupacional con abordaje integral a lo largo del ciclo vital, orientado a la promoción de la autonomía y la independencia funcional como ejes centrales de la intervención. Cuenta con experiencia en procesos de evaluación e intervención terapéutica individual y grupal, mediante el uso de actividades con propósito dirigidas al fortalecimiento del desempeño ocupacional.
-      
-      Su práctica se centra en potenciar las habilidades motoras, cognitivas y psicosociales, favoreciendo la participación activa del individuo en las actividades de la vida diaria. Se destaca por desarrollar intervenciones centradas en la persona, ajustadas a sus necesidades, intereses y contextos de desempeño, con alta capacidad de trabajo interdisciplinario y compromiso con el logro de los objetivos terapéuticos.
-      
-      Su enfoque terapéutico integra estrategias innovadoras basadas en evidencia, promoviendo la máxima funcionalidad y calidad de vida en todas las etapas del desarrollo.
-    `,
-    education: [
-      "Terapeuta Ocupacional",
-      "Formación en actividades de la vida diaria (AVD)",
-      "Especialización en rehabilitación funcional",
-      "Certificación en abordaje centrado en la persona",
-    ],
-    experience: [
-      "Evaluación e intervención en actividades de la vida diaria",
-      "Rehabilitación de habilidades motoras y cognitivas",
-      "Terapia ocupacional individual y grupal",
-      "Promoción de autonomía e independencia",
-      "Intervención psicosocial y de participación comunitaria",
-      "Trabajo interdisciplinario en equipo de salud",
-    ],
-    specialties: [
-      "Actividades de la vida diaria (AVD)",
-      "Rehabilitación funcional",
-      "Habilidades motoras y coordinación",
-      "Intervención cognitivo-conductual",
-      "Participación social y comunitaria",
-      "Abordaje centrado en la persona",
-      "Trabajo interdisciplinario",
-      "Promoción de la autonomía",
-    ],
-  },
-  {
-    id: 8,
     name: "Manuel Guerrero",
     title: "Neuropsicólogo Clínico",
     specialty: "Neurodegeneración y daño cerebral adquirido en adultos",
@@ -346,7 +305,7 @@ export const teamMembers: ProfessionalMember[] = [
     ],
   },
   {
-    id: 9,
+    id: 8,
     name: "Martha Duarte",
     title: "Terapeuta Ocupacional",
     specialty: "Pediatría y procesos de aprendizaje",
@@ -390,9 +349,9 @@ export const teamMembers: ProfessionalMember[] = [
     ],
   },
   {
-    id: 10,
+    id: 9,
     name: "Daniela Marín Mejía",
-    title: "Psicóloga",
+    title: "Neuropsicóloga Infantil",
     specialty:
       "Educación Inclusiva y Diseño Universal para el Aprendizaje (DUA)",
     image: daniela,
