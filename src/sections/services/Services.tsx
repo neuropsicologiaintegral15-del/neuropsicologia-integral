@@ -103,7 +103,7 @@ export default function Services() {
   };
 
   return (
-    <section id="servicios" className="py-4 bg-white">
+    <section id="servicios" className="py-4 bg-white scroll-mt-12">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center my-12"

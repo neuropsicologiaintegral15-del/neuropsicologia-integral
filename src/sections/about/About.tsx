@@ -57,7 +57,7 @@ export default function About() {
   ];
 
   return (
-    <section id="nosotros" className="py-4 bg-gray-50">
+    <section id="nosotros" className="py-4 bg-gray-50 scroll-mt-12">
       <div className="container mx-auto px-4">
         {/* Encabezado */}
         <div className="text-center my-12">

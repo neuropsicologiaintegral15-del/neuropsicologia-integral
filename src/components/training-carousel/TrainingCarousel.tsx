@@ -98,7 +98,7 @@ export default function TrainingCarousel() {
         viewport={{ once: true, margin: "-100px" }}
       >
         {/* Encabezado simple */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-4">
           <motion.h2
             className="text-3xl font-bold text-gray-800 mt-16"
             initial={{ opacity: 0, y: 30 }}
@@ -113,7 +113,7 @@ export default function TrainingCarousel() {
             Capacitaciones
           </motion.h2>
           <motion.p
-            className="text-gray-600 max-w-2xl mx-auto my-4"
+            className="text-gray-600 max-w-2xl mx-auto mt-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{

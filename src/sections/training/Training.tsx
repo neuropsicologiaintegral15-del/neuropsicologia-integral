@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export default function Training() {
   const navigate = useNavigate();
   return (
-    <div id="capacitaciones">
+    <div id="capacitaciones" className="scroll-mt-28">
       <TrainingCarousel />
       <motion.div
         className="text-center"

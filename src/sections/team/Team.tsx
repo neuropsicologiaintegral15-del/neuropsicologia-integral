@@ -41,7 +41,7 @@ export default function Team() {
   };
 
   return (
-    <section id="equipo" className="py-4 bg-gray-50 overflow-hidden">
+    <section id="equipo" className="py-4 bg-gray-50 overflow-hidden scroll-mt-12">
       <div className="container mx-auto px-4 overflow-hidden">
         <motion.div
           className="max-w-5xl mx-auto overflow-hidden"
