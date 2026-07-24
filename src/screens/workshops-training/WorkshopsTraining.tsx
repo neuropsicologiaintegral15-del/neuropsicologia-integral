@@ -81,7 +81,6 @@ export default function WorkShopsTraining() {
                 </p>
               </div>
 
-
               <p className="italic text-center text-gray-600 py-2">
                 Porque un cerebro activo es un cerebro con más posibilidades de disfrutar, aprender y mantenerse funcional a lo largo de la vida.
               </p>
@@ -115,7 +114,6 @@ export default function WorkShopsTraining() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-inline">
 
-
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -123,6 +121,7 @@ export default function WorkShopsTraining() {
               className="space-y-6"
             >
               <img className="rounded-2xl w-full" src={tallerUno} alt="Capacitacion_Info_Uno" />
+
 
             </motion.div>
 
@@ -172,13 +171,67 @@ export default function WorkShopsTraining() {
                     <FaArrowRight className="ml-3 group-hover:translate-x-1 transition-transform duration-300" />
                   </motion.button>
                 </div>
-
               </div>
             </motion.div>
           </div>
+
           <div className="w-full mt-8">
             {/* Texto de inscripción debajo de la imagen */}
             <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+              <div className="flex justify-center p-6 md:p-8">
+                <div className="space-y-4 text-gray-700">
+                  <p className="text-xl font-bold text-primary-dark text-center">
+                    🗓️ Detalles del Evento
+                  </p>
+
+                  <ul className="space-y-3 ml-0 list-none">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary-dark font-bold">•</span>
+                      <span><span className="font-semibold">Fecha:</span> Sábado, 29 de Agosto</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary-dark font-bold">•</span>
+                      <span><span className="font-semibold">Hora:</span> 8:00 a.m. a 1:00 p.m.</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary-dark font-bold">•</span>
+                      <span><span className="font-semibold">Lugar:</span> Centro de Eventos Da Vinci (Cali, Valle)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary-dark font-bold">•</span>
+                      <span><span className="font-semibold">Facilitadora:</span> Viviana Solís Arcila | CEO del Centro de Neuropsicología Integral</span>
+                    </li>
+                  </ul>
+
+                  <p className="text-center text-sm italic text-gray-600 bg-blue-50 p-3 rounded-lg">
+                    Si deseas conocer más del perfil profesional, accede al enlace de "conoce nuestro equipo"
+                  </p>
+
+                  <p className="text-xl font-bold text-primary-dark text-center pt-2">
+                    💳 Inversión e Inscripciones
+                  </p>
+
+                  <ul className="space-y-2 ml-0 list-none">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary-dark font-bold">•</span>
+                      <span><span className="font-semibold">Público General:</span> $220.000 COP</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary-dark font-bold">•</span>
+                      <span><span className="font-semibold">Estudiantes y Convenios:</span> $190.000 COP</span>
+                    </li>
+                  </ul>
+
+                  <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+                    <p className="font-semibold text-center mb-2">✨ Tu inscripción incluye:</p>
+                    <ul className="space-y-1 ml-5 list-disc">
+                      <li>Participación en las 5 horas de taller presencial.</li>
+                      <li>Snacks durante la jornada.</li>
+                      <li>Certificado digital de asistencia.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
               <div className="space-y-4 text-gray-700">
                 <p className="text-xl font-bold text-primary-dark text-center">
                   📲 ¡Reserva tu cupo hoy mismo!
